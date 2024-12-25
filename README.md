@@ -17,7 +17,16 @@ cd your-repository-name
 ```
 
 ### 2. Set up Database
-To store shortened URLs, you need to create a table in your database. Use the provided redirect.sql file to create the necessary table.
+To store shortened URLs, you need to create a table in your database. 
+```mysql
+CREATE TABLE `redirect` (
+  `id` int(11) NOT NULL,
+  `url` varchar(100) NOT NULL,
+  `short_url` varchar(50) NOT NULL,
+  `hits` int(11) DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+```
+Use the provided redirect.sql file to create the necessary table.
 
 ### 3. Configure Database Settings
 Edit the config.php file located in the auth folder to match your database configuration. 
