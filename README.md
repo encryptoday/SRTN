@@ -43,4 +43,4 @@ Make sure the database credentials are correct and match the settings of your se
 
 ## Live Demo
 
-You can have a look at live SRTN at [https://mmm.sh/tools/url_shortner](https://mmm.sh/tools/url_shortner)
+You can have a look at [live SRTN](https://mmm.sh/tools/url_shortner)
